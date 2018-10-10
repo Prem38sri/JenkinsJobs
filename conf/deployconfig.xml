@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application name="DEPLOY_CHECK/LogWriter" xmlns="http://www.tibco.com/xmlns/ApplicationManagement">
+    <description/>
+    <contact/>
+<maxdeploymentrevision>10</maxdeploymentrevision>
+    <NVPairs name="Global Variables">
+    </NVPairs>
+    <repoInstances selected="local">
+        <localRepoInstance>
+            <encoding>UTF-8</encoding>
+        </localRepoInstance>
+    </repoInstances>
+    <services>
+        <bw name="Process Archive.par">
+            <enabled>true</enabled>
+            <bindings>
+             <!-- PARREPLACER -->
+            </bindings>
+
+            <failureCount>0</failureCount>
+            <failureInterval>0</failureInterval>
+            <bwprocesses>
+                <bwprocess name="Process Definition.process">
+                    <starter>Timer</starter>
+                    <enabled>true</enabled>
+                    <maxJob>0</maxJob>
+                    <activation>true</activation>
+                    <flowLimit>0</flowLimit>
+                </bwprocess>
+            </bwprocesses>
+            <isFt>true</isFt>
+            <faultTolerant>
+                <hbInterval>10000</hbInterval>
+                <activationInterval>35000</activationInterval>
+                <preparationDelay>0</preparationDelay>
+            </faultTolerant>
+        </bw>
+    </services>
+</application>

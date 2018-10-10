@@ -1,0 +1,31 @@
+                <binding name="Process Archive-PARNUMBER">
+                    <machine>BWMACHINE</machine>
+                    <product>
+                        <type>bwengine</type>
+                        <version/>
+                        <location/>
+                    </product>
+                    <description/>
+                    <contact/>
+                    <setting>
+                        <startOnBoot>true</startOnBoot>
+                        <enableVerbose>false</enableVerbose>
+                        <maxLogFileSize>500</maxLogFileSize>
+                        <maxLogFileCount>10</maxLogFileCount>
+                        <threadCount>8</threadCount>
+
+                        <java>
+                            <prepandClassPath/>
+                            <appendClassPath/>
+                            <initHeapSize>32</initHeapSize>
+                            <maxHeapSize>256</maxHeapSize>
+                            <threadStackSize>256</threadStackSize>
+                        </java>
+                    </setting>
+                    <ftWeight>200</ftWeight>
+                    <shutdown>
+                        <checkpoint>true</checkpoint>
+                        <timeout>1800</timeout>
+                    </shutdown>
+                </binding>
+                <!-- PARREPLACER -->
